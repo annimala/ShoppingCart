@@ -8,7 +8,7 @@ pipeline {
     environment {
           PATH = "C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}"
           DOCKERHUB_CREDENTIALS_ID = 'Docker_Hub'
-          DOCKERHUB_REPO = 'annialanen/weather_test'
+          DOCKERHUB_REPO = 'annialanen/shopping_cart'
           DOCKER_IMAGE_TAG = 'v1'
       }
 
@@ -17,7 +17,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/annimala/OTP1_inclass_assignment.git'
+                git 'https://github.com/annimala/ShoppingCart.git'
             }
         }
 
