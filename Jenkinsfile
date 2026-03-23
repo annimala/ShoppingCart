@@ -21,15 +21,9 @@ pipeline {
             }
         }
 
-        stage('Build') {
+        stage('Build & test') {
             steps {
                 bat 'mvn clean install'
-            }
-        }
-
-        stage('Test') {
-            steps {
-                bat 'mvn test'
             }
         }
 
